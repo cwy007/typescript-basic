@@ -16,6 +16,7 @@ function getLength(input: string | number): number {
 
 //type guard
 function getLength2(input: string | number): number {
+  // 在条件分支中自动缩小范围
   if (typeof input === 'string') {
     return input.length
   } else {
